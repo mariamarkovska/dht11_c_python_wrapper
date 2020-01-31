@@ -118,6 +118,11 @@ struct Measurement * read_dht_data_c(int DHT_PIN, struct Measurement *meas)
 // Python wrapper function to read the sensor
 static PyObject * read_dht_data(PyObject *self, PyObject *args){
 	
+	// Setup wiringPi pins
+	if(wiringPiSetup() == -1){
+		exit(1);
+	}
+
 	// Parse args from python
 	int dht_pin;
     // We expect at least 1 string argument to this function
