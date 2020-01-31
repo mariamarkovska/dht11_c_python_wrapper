@@ -1,9 +1,10 @@
 from distutils.core import setup, Extension
 
 dht11_module = Extension('dht11',
-    include_dirs = ['/usr/local/include'],
-    # libraries = ['stdio'], 
+    library_dirs = ['/usr/local/include/python2.7/'],
+    libraries = ['wiringPi'], 
     sources=['dht11module.c']
+    # extra_compile_args = ["-lwiringPi"]
 )
 
 setup (name = 'dht11',
