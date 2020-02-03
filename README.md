@@ -5,6 +5,7 @@ Created for usage on ASUS TinkerBoard and utilizes TinkerBoard GPIO C library, w
 ## Prerequisites
 The GPIO C library for Tinker Board: https://github.com/TinkerBoard/gpio_lib_c
 
+Python developer package: ```apt-get install python-dev```
 
 ## Install package
 Build:
