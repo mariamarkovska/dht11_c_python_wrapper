@@ -90,7 +90,7 @@ struct Measurement * read_dht_data_c(int DHT_PIN, struct Measurement *meas)
 		{
 			c = -c;
 		}
-		float f = c * 1.8f + 32;
+		// float f = c * 1.8f + 32;
 	    (*meas).temp = c;
     	(*meas).hum = h;
         return meas;
