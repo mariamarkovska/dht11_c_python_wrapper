@@ -4,7 +4,6 @@ dht11_module = Extension('dht11',
     library_dirs = ['/usr/local/include/python2.7/'],
     libraries = ['wiringPi'], 
     sources=['dht11module.c']
-    # extra_compile_args = ["-lwiringPi"]
 )
 
 setup (name = 'dht11',
