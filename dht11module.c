@@ -139,7 +139,7 @@ static PyObject * read_dht_data(PyObject *self, PyObject *args){
     }
 
 	// return the valid measurements as a python dictionary object
-    return Py_BuildValue("{s:d,s:d}", "Temperature", meas.temp, "Humidity", meas.hum);
+    return Py_BuildValue("{s:d,s:d}", "temperature", meas.temp, "humidity", meas.hum);
 }
 
 // Function table
